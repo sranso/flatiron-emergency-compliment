@@ -7,3 +7,28 @@ group 'development' do
   gem 'tux'
   gem 'bootstrap'
 end
+
+class Outcome
+
+  def initialize(user, computer)
+    
+  end
+
+end
+
+def method_name
+  @rock > @scissors
+  @scissors > @paper
+  @paper > @rock  
+end
+
+comp is actually "rock"
+comp = @rock
+comp = @comp
+
+{rock => scissors} #rock wins
+if {user_inp => comp_imp} == {rock => scissors}
+  return true
+else
+  
+

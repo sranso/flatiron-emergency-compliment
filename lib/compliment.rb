@@ -1,15 +1,11 @@
 class Compliment
 
-  MESSAGES = [
-    "Who did your hair? It's never looked better.",
-    "Your code gets better every day.",
-    "HAHAH whaat stop I'm laughing too hard!",
-    "Unicorns only appear when you're in the room.",
-    "The gold leaves in your hair must be worth more than a thousand suns!"
-  ]
-
   def message
-    MESSAGES.sample
+    @messages = []
+    File.readlines('./public/compliments.txt').each do |line|
+      @messages << line
+    end
+    @messages.sample
   end
 
   def image
